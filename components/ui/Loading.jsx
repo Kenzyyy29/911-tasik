@@ -1,31 +1,41 @@
-// components/Loading.js
-import React from 'react';
+const Loading = ({fadeOut}) => {
+ return (
+  <div
+   className={`flex items-center justify-center h-screen transition-opacity duration-500 ${
+    fadeOut ? "opacity-0" : "opacity-100"
+   } bg-white`}>
+   <div className="loader">
+    <span
+     className="text-9xl font-bold text-black animate-pulse "
+     style={{fontFamily: "Agency FB"}}>
+     9/1/1
+    </span>
+   </div>
+   <style jsx>{`
+    .loader {
+     position: relative;
+     overflow: hidden;
+    }
 
-const Loading = () => {
-  return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
-      <div className="text-9xl font-bold text-blue-500 animate-pulse-zoom">
-        9/1/1
-      </div>
-      <style jsx>{`
-        @keyframes pulse-zoom {
-          0% {
-            transform: scale(1);
-          }
-          50% {
-            transform: scale(1.1);
-          }
-          100% {
-            transform: scale(1);
-          }
-        }
+    .animate-gradient {
+     background-size: 200% 200%;
+     animation: gradientAnimation 2s ease infinite;
+    }
 
-        .animate-pulse-zoom {
-          animation: pulse-zoom 1s ease-in-out infinite;
-        }
-      `}</style>
-    </div>
-  );
+    @keyframes gradientAnimation {
+     0% {
+      background-position: 0% 50%;
+     }
+     50% {
+      background-position: 100% 50%;
+     }
+     100% {
+      background-position: 0% 50%;
+     }
+    }
+   `}</style>
+  </div>
+ );
 };
 
 export default Loading;
