@@ -60,7 +60,7 @@ export default function Home() {
       ))}
      </div>
      <Link
-      href="/"
+      href="/product"
       className="hover:underline">
       See More
      </Link>

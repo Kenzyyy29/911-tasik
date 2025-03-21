@@ -40,7 +40,7 @@ const Links2 = {
 
 const Footer = () => {
  return (
-  <div className="flex items-start justify-between h-auto bg-black py-10 px-40">
+  <div className="flex flex-col gap-8 items-center justify-between h-auto bg-black py-10 px-40">
    <div className="flex items-start justify-between w-full ">
     <div className="flex gap-10 h-full">
      <div className="flex flex-col text-end max-w-[175px]">
@@ -104,6 +104,8 @@ const Footer = () => {
      </div>
     </div>
    </div>
+   <hr className="w-full border border-white" />
+   <p className="text-gray-400">Copyright @2016 911 Coffee.</p>
   </div>
  );
 };

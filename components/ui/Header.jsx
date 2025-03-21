@@ -8,13 +8,13 @@ import {IoIosArrowDown} from "react-icons/io";
 const MoreLink = [
  {
   name: "Contact Us",
-  path: "/",
+  path: "/contact-us",
  },
  {
   name: "FAQ",
   path: "/",
  },
- {name: "Career", path: "/"},
+ {name: "Career", path: "/career"},
 ];
 
 const Flyout = ({isVisible, onMouseEnter, onMouseLeave}) => {
@@ -24,7 +24,7 @@ const Flyout = ({isVisible, onMouseEnter, onMouseLeave}) => {
   <div
    onMouseEnter={onMouseEnter}
    onMouseLeave={onMouseLeave}
-   className="absolute z-10 w-[200px] h-[200px] top-[40px] lg:left-[660px] 2xl:left-[1115px] flex flex-col p-4">
+   className="absolute z-10 w-[200px] h-[200px] lg:top-[40px] xl:top-[50px] lg:left-[660px] xl:left-[500px] 2xl:left-[1115px] flex flex-col p-4">
    <div className="p-5 w-full flex gap-10 bg-tertiary border border-primary bg-white text-black rounded-lg shadow-md">
     <div className="flex flex-col gap-5">
      <div className="flex flex-col gap-3 text-primary">
@@ -79,7 +79,7 @@ const Header = () => {
       header ? ` text-white` : ` text-white`
      }`}>
      <Link href="/about-us">About Us</Link>
-     <Link href="/">Product</Link>
+     <Link href="/product">Product</Link>
      <Link href="/">Blog</Link>
      <Link href="/">Franchise</Link>
      <button
