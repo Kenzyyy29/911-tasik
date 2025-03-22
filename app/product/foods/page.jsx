@@ -39,11 +39,11 @@ const ngopsor = {
 
 const FoodsPage = () => {
  return (
-  <div className="flex flex-col gap-10 overflow-y-auto w-full h-auto px-5">
+  <div className="flex flex-col gap-10 overflow-x-auto lg:overflow-y-auto w-full max-h-[300px] lg:max-h-[450px] px-5">
    <div className="flex flex-col gap-4 ">
     <h1 className="text-gray-400 text-2xl font-bold">{pang.name}</h1>
     <p>{pang.description}</p>
-    <div className="grid grid-cols-3 gap-6 w-full">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full">
      {pang.items.map((item, index) => (
       <div
        key={index}
@@ -64,7 +64,7 @@ const FoodsPage = () => {
    <div className="flex flex-col gap-4 ">
     <h1 className="text-gray-400 text-2xl font-bold">{maksi.name}</h1>
     <p>{maksi.description}</p>
-    <div className="grid grid-cols-3 gap-6 w-full">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full">
      {maksi.items.map((item, index) => (
       <div
        key={index}
@@ -85,7 +85,7 @@ const FoodsPage = () => {
    <div className="flex flex-col gap-4 ">
     <h1 className="text-gray-400 text-2xl font-bold">{ngopsor.name}</h1>
     <p>{ngopsor.description}</p>
-    <div className="grid grid-cols-3 gap-6 w-full">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full">
      {ngopsor.items.map((item, index) => (
       <div
        key={index}

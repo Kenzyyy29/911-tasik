@@ -1,12 +1,12 @@
 const Loading = ({fadeOut}) => {
  return (
   <div
-   className={`flex items-center justify-center h-screen transition-opacity duration-500 ${
+   className={`flex items-center justify-center h-[680px] lg:h-screen transition-opacity duration-500 ${
     fadeOut ? "opacity-0" : "opacity-100"
    } bg-white`}>
    <div className="loader">
     <span
-     className="text-9xl font-bold text-black animate-pulse "
+     className="text-6xl lg:text-9xl font-bold text-black animate-pulse "
      style={{fontFamily: "Agency FB"}}>
      9/1/1
     </span>

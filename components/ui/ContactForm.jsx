@@ -32,7 +32,7 @@ const ContactForm = () => {
     <textarea
      name="message"
      placeholder="Message"
-     className="shadow appearance-none border rounded w-full py-2 px-3 xl:h-[150px] 2xl:h-[180px]  text-tulang leading-tight focus:outline-none focus:shadow-outline bg-white"
+     className="shadow appearance-none border rounded w-full py-2 px-3 h-[150px] xl:h-[150px] 2xl:h-[180px]  text-tulang leading-tight focus:outline-none focus:shadow-outline bg-white"
      required
     />
    </form>

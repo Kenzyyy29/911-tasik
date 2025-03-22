@@ -3,7 +3,27 @@ import Link from "next/link";
 import {useEffect, useState} from "react";
 
 // icons
-import {IoIosArrowDown} from "react-icons/io";
+import {IoIosArrowDown, IoIosClose} from "react-icons/io";
+import {CiMenuFries} from "react-icons/ci";
+
+const MobileLinks = [
+ {
+  name: "About Us",
+  path: "/about-us",
+ },
+ {
+  name: "Product",
+  path: "/product",
+ },
+ {
+  name: "Blog",
+  path: "/",
+ },
+ {
+  name: "Franchise",
+  path: "/",
+ },
+];
 
 const MoreLink = [
  {
@@ -16,6 +36,113 @@ const MoreLink = [
  },
  {name: "Career", path: "/career"},
 ];
+
+const Dropdown = ({isVisible, onClose}) => {
+ if (!isVisible) return null;
+ return (
+  <div className="flex flex-col gap-5 p-3 text-lg font-medium border-b border-t">
+   {MoreLink.map((item, index) => (
+    <Link
+     onClick={onClose}
+     href={item.path}
+     key={index}>
+     {item.name}
+    </Link>
+   ))}
+  </div>
+ );
+};
+
+const Popup = ({isVisible, onCLose}) => {
+ const [dropdown, setDropdown] = useState(false);
+
+ const toggleDropdown = () => {
+  setDropdown(!dropdown);
+ };
+
+ if (!isVisible) return null;
+
+ return (
+  <div className="fixed inset-0 h-full bg-black/70 flex items-center justify-end">
+   <div className="w-[350px] h-full bg-white flex flex-col p-6 justify-between">
+    <div className="flex flex-col">
+     {/*Header*/}
+     <div className="flex flex-col gap-5">
+      <div className="flex justify-between items-center">
+       <Link
+        onClick={onCLose}
+        href="/"
+        className="text-5xl"
+        style={{fontFamily: "Agency FB"}}>
+        9/1/1
+       </Link>
+       <button onClick={onCLose}>
+        <IoIosClose className="text-5xl" />
+       </button>
+      </div>
+      <hr className="w-full border border-black" />
+      {/* Body*/}
+      <div className="flex flex-col gap-5 text-xl font-normal">
+       {MobileLinks.map((item, index) => (
+        <Link
+         href={item.path}
+         key={index}
+         onClick={onCLose}>
+         {item.name}
+        </Link>
+       ))}
+       <button
+        onClick={toggleDropdown}
+        className="flex justify-between items-center">
+        More
+        <IoIosArrowDown />
+       </button>
+       {dropdown && (
+        <Dropdown
+         isVisible={dropdown}
+         onClick={onCLose}
+        />
+       )}
+      </div>
+     </div>
+    </div>
+    <Link
+     href="/"
+     className="px-2 py-4 bg-black text-white rounded-xl text-center text-xl font-semibold">
+     Become a Partner?
+    </Link>
+   </div>
+  </div>
+ );
+};
+
+const MobileNav = () => {
+ const [popup, setPopup] = useState(false);
+
+ const toggleOpen = () => {
+  setPopup(!popup);
+ };
+
+ const toggleClose = () => {
+  setPopup(false);
+ };
+
+ return (
+  <div className="">
+   <button
+    onClick={toggleOpen}
+    className="text-3xl text-white">
+    <CiMenuFries />
+   </button>
+   {popup && (
+    <Popup
+     isVisible={popup}
+     onCLose={toggleClose}
+    />
+   )}
+  </div>
+ );
+};
 
 const Flyout = ({isVisible, onMouseEnter, onMouseLeave}) => {
  if (!isVisible) return null;
@@ -64,7 +191,7 @@ const Header = () => {
 
  return (
   <header
-   className={`fixed z-10 top-0 px-[100px] w-full justify-between flex items-center left-0 transition-all duration-700 ${
+   className={`fixed z-10 top-0 lg:px-[100px] w-full justify-between flex items-center left-0 transition-all duration-700 ${
     header ? "bg-black shadow-lg px-6 py-6" : "px-6 py-8 bg-transparent"
    }`}>
    <nav className="flex gap-10">
@@ -95,7 +222,10 @@ const Header = () => {
      />
     </ul>
    </nav>
-   <div className="">
+   <div className="flex lg:hidden">
+    <MobileNav />
+   </div>
+   <div className="hidden lg:flex">
     <Link
      href="/"
      className="p-2 rounded-xl text-slate-800 bg-white">
