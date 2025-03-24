@@ -12,8 +12,8 @@ const Career = () => {
      backgroundPosition: "center",
     }}>
     <div className="bg-black/60 w-full h-full flex items-center justify-center">
-     <div className="flex flex-col gap-5 max-w-[350px] text-center">
-      <h1 className="font-bold text-2xl">
+     <div className="flex flex-col gap-5 max-w-[600px] text-center">
+      <h1 className="font-bold text-5xl">
        Bergabung bersama kami, dan dapatkan kesempatan karir yang menarik.
       </h1>
      </div>

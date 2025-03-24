@@ -16,12 +16,10 @@ const maksi = {
  name: "Maksi",
  description: "(10 AM - 3 PM)",
  items: [
-  {name: "Hot Latte", image: "/menus/1.png", description: "abcd"},
-  {name: "Hot Latte", image: "/menus/1.png", description: "abcd"},
-  {name: "Hot Latte", image: "/menus/1.png", description: "abcd"},
-  {name: "Hot Latte", image: "/menus/1.png", description: "abcd"},
-  {name: "Hot Latte", image: "/menus/1.png", description: "abcd"},
-  {name: "Hot Latte", image: "/menus/1.png", description: "abcd"},
+  {name: "Ayam Goreng/Bakar", image: "/menus/1.png", description: "Rp. 25,000"},
+  {name: "911 Fried Rice", image: "/menus/1.png", description: "Rp. 25,000"},
+  {name: "Spaghetti Bolognese", image: "/menus/1.png", description: "Rp. 25,000"},
+  {name: "Ricebowl Variant", image: "/menus/1.png", description: "Rp. 25,000"},
  ],
 };
 
@@ -29,12 +27,10 @@ const ngopsor = {
  name: "Ngopsor",
  description: "(3 PM - 6 PM)",
  items: [
-  {name: "Hot Latte", image: "/menus/1.png", description: "abcd"},
-  {name: "Hot Latte", image: "/menus/1.png", description: "abcd"},
-  {name: "Hot Latte", image: "/menus/1.png", description: "abcd"},
-  {name: "Hot Latte", image: "/menus/1.png", description: "abcd"},
-  {name: "Hot Latte", image: "/menus/1.png", description: "abcd"},
-  {name: "Hot Latte", image: "/menus/1.png", description: "abcd"},
+  {name: "French Fries", image: "/menus/1.png", description: "Rp. 25,000"},
+  {name: "Mendoan", image: "/menus/1.png", description: "Rp. 25,000"},
+  {name: "Bala Bala", image: "/menus/1.png", description: "Rp. 25,000"},
+  {name: "Cireng Rujak", image: "/menus/1.png", description: "Rp. 25,000"},
  ],
 };
 
@@ -54,7 +50,9 @@ const ProductPage = () => {
         alt=""
         className="w-[120px]"
        />
-       <h2 className="text-xl font-semibold mt-2 text-black">{item.name}</h2>
+       <div className="flex flex-col items-center justify-center text-center h-[60px]">
+        <h2 className="text-lg font-semibold mt-2 text-black">{item.name}</h2>
+       </div>
        <p className="text-gray-600 text-lg">{item.description}</p>
       </div>
      ))}
@@ -75,7 +73,9 @@ const ProductPage = () => {
         alt=""
         className="w-[120px]"
        />
-       <h2 className="text-lg font-semibold mt-2 text-black">{item.name}</h2>
+       <div className="flex flex-col items-center justify-center text-center h-[60px]">
+        <h2 className="text-lg font-semibold mt-2 text-black">{item.name}</h2>
+       </div>
        <p className="text-gray-600">{item.description}</p>
       </div>
      ))}
@@ -96,7 +96,9 @@ const ProductPage = () => {
         alt=""
         className="w-[120px]"
        />
-       <h2 className="text-lg font-semibold mt-2 text-black">{item.name}</h2>
+       <div className="flex flex-col items-center justify-center text-center h-[60px]">
+        <h2 className="text-lg font-semibold mt-2 text-black">{item.name}</h2>
+       </div>
        <p className="text-gray-600">{item.description}</p>
       </div>
      ))}
