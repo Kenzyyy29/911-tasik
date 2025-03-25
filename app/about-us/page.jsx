@@ -1,36 +1,32 @@
 import ReviewCards from "@/components/ui/ReviewCards";
 import Link from "next/link";
 
-const menu = [
- {name: "Menu 1", image: "/menus/1.png", description: "ABCD"},
- {name: "Menu 1", image: "/menus/4.png", description: "DBCA"},
- {name: "Menu 1", image: "/menus/6.png", description: "CCBA"},
-];
+
 
 const spot = [
  {
-  name: "Tasikmalaya",
-  image: "/1.jpeg",
+  name: "VIP ROOM",
+  image: "/spot/1.jpeg",
  },
  {
-  name: "Tasikmalaya",
-  image: "/2.jpeg",
+  name: "MEETING ROOM",
+  image: "/spot/7.jpeg",
  },
  {
-  name: "Tasikmalaya",
-  image: "/3.jpeg",
+  name: "TAMAN ATAS",
+  image: "/spot/3.jpeg",
  },
  {
-  name: "Tasikmalaya",
-  image: "/4.jpeg",
+  name: "LESEHAN",
+  image: "/spot/4.jpeg",
  },
  {
-  name: "Tasikmalaya",
-  image: "/5.jpeg",
+  name: "SOFA",
+  image: "/spot/5.jpeg",
  },
  {
-  name: "Tasikmalaya",
-  image: "/6.jpeg",
+  name: "LETTER C",
+  image: "/spot/6.jpeg",
  },
 ];
 
@@ -56,32 +52,7 @@ const About = () => {
     </div>
    </section>
 
-   {/* Menu Section */}
-   <section className="h-auto py-10 w-screen lg:w-full flex items-center justify-center">
-    <div className="flex flex-col gap-6 items-center justify-center">
-     <h1 className="text-3xl font-bold text-black/40">BEST SELLER MENU</h1>
-     <div className="w-full flex flex-col lg:flex-row gap-6">
-      {menu.map((item, index) => (
-       <div
-        key={index}
-        className="flex flex-col gap-6 items-center justify-center w-[300px] border rounded-lg p-3 bg-slate-200 backdrop-blur-lg ">
-        <img
-         src={item.image}
-         alt=""
-         className="w-[150px]"
-        />
-        <h2 className="text-lg font-semibold mt-2">{item.name}</h2>
-        <p className="text-gray-600">{item.description}</p>
-       </div>
-      ))}
-     </div>
-     <Link
-      href="/product"
-      className="hover:underline">
-      Lihat Semua Produk
-     </Link>
-    </div>
-   </section>
+  
 
    {/* Spot Section */}
    <section className="h-auto py-10 w-full flex flex-col gap-6 items-center justify-center bg-[#f4f4f4]">
@@ -102,11 +73,6 @@ const About = () => {
       </div>
      ))}
     </div>
-    <Link
-     href="/"
-     className="hover:underline">
-     See More
-    </Link>
    </section>
 
    {/*Review Section*/}
@@ -130,8 +96,14 @@ const About = () => {
      </div>
     </div>
    </section>
-   <section className="h-screen py-10 w-full flex gap-24 items-center justify-center bg-[#f4f4f4]">
-    <div className="h-[400px] w-[300px] bg-white shadow-lg rounded-2xl"></div>
+   <section className="h-screen py-10 w-full flex gap-20 items-center justify-center bg-[#f4f4f4] pr-5">
+    <div className="w-auto h-[400px] bg-white shadow-lg rounded-r-2xl flex items-end justify-center overflow-hidden">
+     <img
+      src="/4.jpeg"
+      alt=""
+      className=""
+     />
+    </div>
     <div className="flex flex-col gap-5 max-w-[500px]">
      <h1 className="text-5xl font-bold">BERGABUNGLAH BERSAMA KAMI</h1>
      <p className="text-lg">
