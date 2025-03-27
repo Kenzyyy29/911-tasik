@@ -8,21 +8,21 @@ const kelebihan = {
  name: "APA YANG BISA KAMI SAJIKAN?",
  items: [
   {
-   name: "Makanan yang berkualitas",
+   name: "Foods",
    icon: <PiForkKnifeFill />,
    desctiption: "Kami menyajikan makanan terbaik kami dengan kualitas.",
   },
   {
-   name: "Fresh Beverages",
+   name: "Beverages",
    icon: <SiCoffeescript />,
-   desctiption: "Lorem 1234",
+   desctiption: "Minuman Kami Segar",
   },
   {
-   name: "Good Services",
+   name: "Services",
    icon: <BsFillPersonCheckFill />,
-   desctiption: "Lorem 1234",
+   desctiption: "Pelayanan Terbaik",
   },
-  {name: "Many Spaces", icon: <TbBuildingStore />, desctiption: "Lorem 1234"},
+  {name: "Tempat", icon: <TbBuildingStore />, desctiption: "Tempat Yang Luas"},
  ],
 };
 
@@ -45,7 +45,7 @@ export default function Home() {
      backgroundPosition: "center",
     }}>
     <div className="text-center bg-black/40 h-full w-full flex flex-col gap-4 items-center justify-center px-10 pt-5">
-     <h2 className="text-4xl font-bold">911 COFFEE TASIKMALAYA</h2>
+     <h2 className="text-5xl font-bold">911 COFFEE TASIKMALAYA</h2>
      <p className="text-lg">GOOD COFFEE START FROM HERE</p>
     </div>
    </section>
@@ -103,6 +103,20 @@ export default function Home() {
       className="hover:underline">
       Lihat Semua Produk
      </Link>
+    </div>
+   </section>
+   <section className="h-auto py-10 w-full gap-[100px] flex items-center justify-center px-[100px]">
+    <div className="h-[400px] w-[300px] bg-black rounded-lg"></div>
+    <div className="flex flex-col gap-3 max-w-[400px]">
+     <h1 className="text-4xl font-bold">
+      Kami selalu memberikan pelayanan terbaik untuk anda
+     </h1>
+     <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque placeat
+      voluptatibus id repudiandae fugit perspiciatis maiores eius doloribus
+      tempore consequuntur error eaque, explicabo quam quas harum? Fuga quam
+      molestias repellat?
+     </p>
     </div>
    </section>
   </div>

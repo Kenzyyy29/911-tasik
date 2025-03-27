@@ -32,6 +32,21 @@ export default function RootLayout({children}) {
 
  return (
   <html lang="en">
+   <head>
+    <title>911 Coffee Tasikmalaya</title>
+    <meta
+     name="description"
+     content="Good Coffee Start From Here"
+    />
+    <meta
+     name="viewport"
+     content="width=device-width, initial-scale=1"
+    />
+    <link
+     rel="icon"
+     href="/favicon.ico"
+    />
+   </head>
    <body>
     {loading ? (
      <Loading fadeOut={fadeOut} />

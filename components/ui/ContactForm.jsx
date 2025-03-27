@@ -2,7 +2,7 @@ const ContactForm = () => {
  return (
   <div className=" w-full max-w-sm flex flex-col gap-4 rounded-lg">
    <form className="flex flex-col w-full">
-    <div className="p-2 border border-white text-white rounded-lg bg-gray-500">
+    <div className="p-2 border border-gray-400 text-gray-400  rounded-lg bg-white">
      <input
       type="text"
       placeholder="Name"
@@ -11,7 +11,7 @@ const ContactForm = () => {
     </div>
    </form>
    <form className="flex flex-col w-full">
-    <div className="p-2 border border-white text-white rounded-lg bg-gray-500">
+    <div className="p-2 border border-gray-400 text-gray-400  rounded-lg bg-white">
      <input
       type="email"
       placeholder="Email"
@@ -20,7 +20,7 @@ const ContactForm = () => {
     </div>
    </form>
    <form className="flex flex-col w-full">
-    <div className="p-2 border border-white text-white rounded-lg bg-gray-500">
+    <div className="p-2 border border-gray-400 text-gray-400  rounded-lg bg-white">
      <input
       type="text"
       placeholder="Phone Number "
@@ -32,17 +32,12 @@ const ContactForm = () => {
     <textarea
      name="message"
      placeholder="Message"
-     className="shadow appearance-none border border-white text-white rounded w-full py-2 px-3 h-[150px] xl:h-[150px] 2xl:h-[180px]  text-tulang leading-tight focus:outline-none focus:shadow-outline bg-gray-500"
+     className="shadow appearance-none border border-gray-400 text-gray-400  rounded-lg bg-white w-full py-2 px-3 h-[150px] xl:h-[150px] 2xl:h-[180px]  text-tulang leading-tight focus:outline-none focus:shadow-outline"
      required
     />
    </form>
-   <div className="flex justify-between items-center">
-    <h1
-     className="text-4xl text-white font-bold"
-     style={{fontFamily: "Agency FB"}}>
-     9/1/1
-    </h1>
-    <button className="bg-white py-2 px-1 font-semibold rounded-lg text-gray-800 w-[100px]">
+   <div className="flex justify-end items-center">
+    <button className="bg-black py-2 px-1 font-semibold rounded-lg text-white w-[100px]">
      Send
     </button>
    </div>

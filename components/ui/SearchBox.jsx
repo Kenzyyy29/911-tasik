@@ -9,18 +9,21 @@ const items = [
   description:
    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus omniasdsadkosadlsaldsladlsdjssladmsl",
   path: "/",
+  image: "/employee/1.jpg",
  },
  {
   name: "Kitchen",
   description:
    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus omniasdsadkosadlsaldsladlsdjssladmsl",
   path: "/",
+  image: "/employee/2.jpg",
  },
  {
   name: "Waitress",
   description:
    " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus omniasdsadkosadlsaldsladlsdjssladmsl",
   path: "/",
+  image: "/employee/3.jpg",
  },
 ];
 
@@ -41,9 +44,9 @@ const SearchBox = () => {
  };
 
  return (
-  <section className="h-screen text-center px-10 py-10">
+  <section className="h-screen text-center px-10 py-10 w-full">
    <h1 className="text-3xl lg:text-4xl font-bold">Search your interest here</h1>
-   <div className="p-4 flex flex-col gap-[80px] items-center justify-center">
+   <div className="p-4 flex flex-col gap-[80px] items-center justify-center w-full">
     <input
      type="text"
      placeholder="Search..."
@@ -51,31 +54,26 @@ const SearchBox = () => {
      value={searchTerm}
      onChange={(e) => setSearchTerm(e.target.value)}
     />
-    <div className="grid grid-cols-1 lg:grid-cols-3  gap-10 items-center w-full">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center w-full">
      {filteredItems.length > 0 ? (
       filteredItems.map((item, index) => (
-       <div key={index}>
+       <div
+        key={index}
+        className="w-full">
         <div
-         className="p-2 border cursor-pointer h-[300px]"
-         onClick={() => handleItemClick(item)}>
-         {item.name}
-        </div>
-        {visibleItem && visibleItem.name === item.name && (
-         <div className="flex flex-col lg:flex-row gap-10 items-center border-b border-r border-l p-4">
-          <div className="flex flex-col gap-4   rounded bg-transparent w-full text-start">
-           <img
-            src={visibleItem.image}
-            alt=""
-            className="w-[130px] h-[80px] animate-pulse lg:hidden"
-           />
-           <h2 className="text-lg font-bold">{visibleItem.name}</h2>
-           <p>{visibleItem.description}</p>
-           <div className="hover:underline">
-            <Link href={visibleItem.path}>Try to sign</Link>
-           </div>
-          </div>
+         className=" cursor-pointer rounded-lg flex flex-col items-center justify-center overflow-hidden h-[300px]"
+         onClick={() => handleItemClick(item)}
+         style={{
+          backgroundImage: `url(${item.image})`,
+          height: "55vh",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+         }}>
+         <div className="bg-black/60 w-full h-full flex flex-col items-center justify-center">
+          <h1 className="text-3xl font-bold text-white">{item.name}</h1>
+          <p className="text-white">{item.description}</p>
          </div>
-        )}
+        </div>
        </div>
       ))
      ) : (

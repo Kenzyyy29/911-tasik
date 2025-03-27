@@ -18,7 +18,11 @@ const maksi = {
  items: [
   {name: "Ayam Goreng/Bakar", image: "/menus/1.png", description: "Rp. 25,000"},
   {name: "911 Fried Rice", image: "/menus/1.png", description: "Rp. 25,000"},
-  {name: "Spaghetti Bolognese", image: "/menus/1.png", description: "Rp. 25,000"},
+  {
+   name: "Spaghetti Bolognese",
+   image: "/menus/1.png",
+   description: "Rp. 25,000",
+  },
   {name: "Ricebowl Variant", image: "/menus/1.png", description: "Rp. 25,000"},
  ],
 };
@@ -36,7 +40,7 @@ const ngopsor = {
 
 const ProductPage = () => {
  return (
-  <div className="flex flex-col gap-10 overflow-x-auto lg:overflow-y-auto w-full max-h-[400px] lg:max-h-[450px] px-5">
+  <div className="flex flex-col gap-10 overflow-x-auto lg:overflow-y-auto w-full max-h-[400px] lg:max-h-[480px] px-5">
    <div className="flex flex-col gap-4 ">
     <h1 className="text-gray-400 text-3xl font-bold">{pang.name}</h1>
     <p>{pang.description}</p>
