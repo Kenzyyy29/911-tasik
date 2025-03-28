@@ -17,7 +17,7 @@ const ProductLayout = ({children}) => {
      </h2>
     </div>
    </div>
-   <div className="flex h-screen lg:pt-[40px] pb-[50px] px-[10px] lg:px-[90px] bg-[#f4f4f4]">
+   <div className="flex flex-col lg:flex-row items-center justify-center lg:items-start h-screen lg:pt-[40px] pb-[50px] px-[10px] lg:px-[90px] bg-[#f4f4f4]">
     <Sidebar />
     {children}
    </div>

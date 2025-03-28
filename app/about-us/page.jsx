@@ -1,8 +1,6 @@
 import ReviewCards from "@/components/ui/ReviewCards";
 import Link from "next/link";
 
-
-
 const spot = [
  {
   name: "VIP ROOM",
@@ -52,12 +50,10 @@ const About = () => {
     </div>
    </section>
 
-  
-
    {/* Spot Section */}
    <section className="h-auto py-10 w-full flex flex-col gap-6 items-center justify-center bg-[#f4f4f4]">
     <h1 className="text-3xl text-black/40 font-bold">Favorite Spot</h1>
-    <div className="grid grid-cols-3 gap-5">
+    <div className="grid lg:grid-cols-3 grid-cols-1 gap-5">
      {spot.map((item, index) => (
       <div
        key={index}
@@ -78,7 +74,7 @@ const About = () => {
    {/*Review Section*/}
    <section className="h-auto w-full flex flex-col  justify-center  bg-white p-10">
     <div className="text-center h-full w-full flex flex-col gap-10 items-center justify-center ">
-     <div className="flex flex-col lg:flex-row gap-5 items-center justify-center px-10">
+     <div className="flex flex-col lg:flex-row gap-5 items-center justify-center px-1 lg:px-10">
       <div className="flex flex-col gap-5 items-start max-w-[690px]">
        <h1 className="text-5xl font-bold text-start">
         Ceritakan Pengalaman Berharga anda bersama kami!
@@ -96,16 +92,16 @@ const About = () => {
      </div>
     </div>
    </section>
-   <section className="h-screen py-10 w-full flex gap-20 items-center justify-center bg-[#f4f4f4] pr-5">
+   <section className="h-screen py-10 w-full flex flex-col lg:flex-row gap-20 items-center justify-center bg-[#f4f4f4] pr-5">
     <div className="w-auto h-[400px] bg-white shadow-lg rounded-r-2xl flex items-end justify-center overflow-hidden">
      <img
       src="/4.jpeg"
       alt=""
-      className=""
+      className="h-full lg:h-auto"
      />
     </div>
-    <div className="flex flex-col gap-5 max-w-[500px]">
-     <h1 className="text-5xl font-bold">BERGABUNGLAH BERSAMA KAMI</h1>
+    <div className="flex flex-col gap-5 max-w-[500px] px-4 lg:px-0">
+     <h1 className="text-4xl lg:text-5xl font-bold">BERGABUNGLAH BERSAMA KAMI</h1>
      <p className="text-lg">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos tempore, ea
       a beatae mollitia placeat enim laudantium. Porro, commodi culpa? Maxime

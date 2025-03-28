@@ -22,7 +22,7 @@ const kelebihan = {
    icon: <BsFillPersonCheckFill />,
    desctiption: "Pelayanan Terbaik",
   },
-  {name: "Tempat", icon: <TbBuildingStore />, desctiption: "Tempat Yang Luas"},
+  {name: "Spaces", icon: <TbBuildingStore />, desctiption: "Tempat Yang Luas"},
  ],
 };
 
@@ -50,17 +50,19 @@ export default function Home() {
     </div>
    </section>
    {/*Kelebihan*/}
-   <section className="h-screen w-full flex items-center  bg-white">
-    <div className="text-center h-full w-full flex flex-col gap-10  justify-center pl-[100px]">
-     <div className="flex flex-col lg:flex-row gap-24 items-center justify-center">
-      <div className="flex flex-col gap-3 w-full text-start ">
+   <section className="min-h-screen w-full flex flex-col lg:flex-row items-center py-10 lg:py-0 bg-white">
+    <div className="text-center h-full w-full flex flex-col gap-10  justify-center lg:pl-[100px]">
+     <div className="flex flex-col lg:flex-row lg:gap-24 items-center justify-center">
+      <div className="flex flex-col gap-3 w-full text-start px-[20px] lg:px-0">
        <h1 className="text-5xl font-bold">{kelebihan.name}</h1>
        {kelebihan.items.map((item, index) => (
         <div
          key={index}
-         className="flex gap-3 items-center">
-         <div className="rounded-full w-10 h-10 bg-black text-white flex items-center justify-center">
-          {item.icon}
+         className="flex gap-5 lg:gap-3 items-center">
+         <div className="rounded-full bg-black text-white flex items-center justify-center">
+          <div className="w-14 h-14 flex items-center justify-center text-2xl">
+           {item.icon}
+          </div>
          </div>
          <div className="flex flex-col items-start justify-center">
           <h1 className="text-lg font-semibold">{item.name}</h1>
@@ -69,11 +71,11 @@ export default function Home() {
         </div>
        ))}
       </div>
-      <div className="w-full overflow-hidden h-[400px] flex items-center rounded-l-2xl">
+      <div className="w-full overflow-hidden h-[400px] flex items-center rounded-l-2xl pl-24 lg:pl-0">
        <img
         src="/6.jpeg"
         alt=""
-        className="w-full"
+        className="w-full rounded-l-2xl"
        />
       </div>
      </div>
@@ -105,7 +107,7 @@ export default function Home() {
      </Link>
     </div>
    </section>
-   <section className="h-auto py-10 w-full gap-[100px] flex items-center justify-center px-[100px]">
+   <section className="h-auto py-10 w-full gap-14 lg:gap-[100px] flex flex-col lg:flex-row items-center justify-center px-10 lg:px-[100px]">
     <div className="h-[400px] w-[300px] bg-black rounded-lg"></div>
     <div className="flex flex-col gap-3 max-w-[400px]">
      <h1 className="text-4xl font-bold">
