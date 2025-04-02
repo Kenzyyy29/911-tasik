@@ -50,26 +50,6 @@ const Article1 = () => {
       </span>
      </p>
     </article>
-    <div className="flex flex-col gap-3">
-     <h1 className="text-3xl font-bold">Satu Respon</h1>
-     <div className="flex justify-between">
-      <div className="flex flex-col">
-       <h1 className="font-bold">
-        Editor <span className="font-normal">Berkata :</span>
-       </h1>
-       <p>Tes</p>
-       <Link
-        href="#form"
-        className="underline text-gray-400">
-        Balas
-       </Link>
-      </div>
-      <p className="text-[14px] text-gray-400">27/03/2025, Pukul 22:04</p>
-     </div>
-     <div className="border-t">
-      <BlogForm id="form" />
-     </div>
-    </div>
    </div>
   </div>
  );

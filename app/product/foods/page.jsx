@@ -1,10 +1,10 @@
 const sweet = {
  name: "Sweet Deserts",
  items: [
-  {name: "Honey Butter Toast", image: "/menus/1.png", description: "Rp.23,100"},
+  {name: "Honey Butter Toast", image: "/menus/13.png", description: "Rp.23,100"},
   {
    name: "Sweet Banana Ice Cream",
-   image: "/menus/1.png",
+   image: "/menus/14.png",
    description: "Rp. 17,325",
   },
  ],
@@ -13,20 +13,20 @@ const sweet = {
 const pecel = {
  name: "Pecel Menu",
  items: [
-  {name: "Crispy Egg Pecel", image: "/menus/1.png", description: "Rp. 17,325"},
+  {name: "Crispy Egg Pecel", image: "/menus/4.png", description: "Rp. 17,325"},
   {
    name: "Fried Catfish Pecel",
-   image: "/menus/1.png",
+   image: "/menus/17.png",
    description: "Rp. 23,100",
   },
   {
    name: "Fried Chicken Pecel",
-   image: "/menus/1.png",
+   image: "/menus/16.png",
    description: "Rp. 28,875",
   },
   {
    name: "Saikoto Meat Pecel",
-   image: "/menus/1.png",
+   image: "/menus/15.png",
    description: "Rp. 34,650",
   },
  ],
@@ -35,37 +35,37 @@ const pecel = {
 const lunch = {
  name: "Lunch Time",
  items: [
-  {name: "Chicken Burger", image: "/menus/1.png", description: "Rp. 40,425"},
-  {name: "Tomyum Seafood", image: "/menus/1.png", description: "Rp. 40,425"},
+  {name: "Chicken Burger", image: "/menus/19.png", description: "Rp. 40,425"},
+  {name: "Tomyum Seafood", image: "/menus/22.png", description: "Rp. 40,425"},
   {name: "Club Sandwich", image: "/menus/1.png", description: "Rp. 40,425"},
-  {name: "Fish n Chip", image: "/menus/1.png", description: "Rp. 43,890"},
+  {name: "Fish n Chip", image: "/menus/21.png", description: "Rp. 43,890"},
   {
    name: "Chicken Parmigiana",
-   image: "/menus/1.png",
+   image: "/menus/23.png",
    description: "Rp. 46,200",
   },
-  {name: "Super Breakfast", image: "/menus/1.png", description: "Rp. 46,200"},
-  {name: "Beef Burger", image: "/menus/1.png", description: "Rp. 55,440"},
+  {name: "Super Breakfast", image: "/menus/20.png", description: "Rp. 46,200"},
+  {name: "Beef Burger", image: "/menus/18.png", description: "Rp. 55,440"},
  ],
 };
 
 const main = {
  name: "Main Course",
  items: [
-  {name: "Soto Ayam 911", image: "/menus/1.png", description: "Rp. 28,875"},
+  {name: "Soto Ayam 911", image: "/menus/25.png", description: "Rp. 28,875"},
   {name: "Ayam Geprek 911", image: "/menus/1.png", description: "Rp. 32,340"},
   {
    name: "Ayam Goreng Sambal Matah",
-   image: "/menus/1.png",
+   image: "/menus/24.png",
    description: "Rp. 34,650",
   },
-  {name: "Ayam Bakar Madu", image: "/menus/1.png", description: "Rp. 34,650"},
+  {name: "Ayam Bakar Madu", image: "/menus/29.png", description: "Rp. 34,650"},
   {
    name: "Ayam Rica-Rica",
    image: "/menus/1.png",
    description: "Rp. 34,650",
   },
-  {name: "Fried Rice 911", image: "/menus/1.png", description: "Rp. 34,650"},
+  {name: "Fried Rice 911", image: "/menus/32.png", description: "Rp. 34,650"},
  ],
 };
 
@@ -74,32 +74,32 @@ const ricebowl = {
  items: [
   {
    name: "Fried Chicken Ricebowl",
-   image: "/menus/1.png",
+   image: "/menus/26.png",
    description: "Rp. 28,875",
   },
   {
    name: "Blackpapper Chicken Ricebowl",
-   image: "/menus/1.png",
+   image: "/menus/26.png",
    description: "Rp. 28,875",
   },
   {
    name: "Chicken Matah Ricebowl",
-   image: "/menus/1.png",
+   image: "/menus/26.png",
    description: "Rp. 28,875",
   },
   {
    name: "Barbeque Chicken Ricebowl",
-   image: "/menus/1.png",
+   image: "/menus/26.png",
    description: "Rp. 28,875",
   },
   {
    name: "Honey Sesame Chicken Ricebowl",
-   image: "/menus/1.png",
+   image: "/menus/26.png",
    description: "Rp. 28,875",
   },
   {
    name: "Butter Rice with Barabeque Chicken",
-   image: "/menus/1.png",
+   image: "/menus/31.png",
    description: "Rp. 36,960",
   },
  ],
@@ -115,12 +115,12 @@ const steak = {
   },
   {
    name: "Sirloin Steak",
-   image: "/menus/1.png",
+   image: "/menus/28.png",
    description: "Rp. 78,540",
   },
   {
    name: "Korova Mushroom",
-   image: "/menus/1.png",
+   image: "/menus/27.png",
    description: "Rp. 78,540",
   },
  ],

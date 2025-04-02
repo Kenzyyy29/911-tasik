@@ -4,7 +4,7 @@ const coffee = {
   {name: "Espresso", image: "/menus/1.png", description: "Rp. 18,480"},
   {name: "Americano", image: "/menus/1.png", description: "Rp. 20,790"},
   {name: "Tubruk", image: "/menus/1.png", description: "Rp. 20,790"},
-  {name: "Es Kopi Susu", image: "/menus/1.png", description: "Rp. 22,000"},
+  {name: "Es Kopi Susu", image: "/menus/9.png", description: "Rp. 22,000"},
   {name: "Vietnam Drip", image: "/menus/1.png", description: "Rp. 23,100"},
   {name: "Cappuccino", image: "/menus/1.png", description: "Rp. 23,100"},
   {name: "Latte", image: "/menus/1.png", description: "Rp. 23,100"},
@@ -23,7 +23,7 @@ const coffee = {
    description: "Rp. 26,565",
   },
   {name: "Affogato", image: "/menus/1.png", description: "Rp. 26,565"},
-  {name: "Butter Coffee", image: "/menus/1.png", description: "Rp. 32,340"},
+  {name: "Butter Coffee", image: "/menus/8.png", description: "Rp. 32,340"},
   {name: "V60", image: "/menus/1.png", description: "Rp. 34,650"},
   {name: "Japanese", image: "/menus/1.png", description: "Rp. 34,650"},
  ],
@@ -66,14 +66,14 @@ const yakult = {
 const tea = {
  name: "Tea Based",
  items: [
-  {name: "Sweet Tea", image: "/menus/1.png", description: "Rp. 11,550"},
+  {name: "Sweet Tea", image: "/menus/30.png", description: "Rp. 11,550"},
   {name: "Lychee Tea", image: "/menus/1.png", description: "Rp. 20,790"},
   {name: "Strawberry Tea", image: "/menus/1.png", description: "Rp. 20,790"},
   {name: "Lemon Tea", image: "/menus/1.png", description: "Rp. 20,790"},
   {name: "Thai Tea", image: "/menus/1.png", description: "Rp. 23,100"},
   {name: "Ameer Tea", image: "/menus/1.png", description: "Rp. 23,100"},
   {name: "Grape Tea", image: "/menus/1.png", description: "Rp. 23,100"},
-  {name: "Grenadine Tea", image: "/menus/1.png", description: "Rp. 23,100"},
+  {name: "Grenadine Tea", image: "/menus/11.png", description: "Rp. 23,100"},
  ],
 };
 
@@ -81,7 +81,7 @@ const mocktail = {
  name: "Selected Mocktail",
  items: [
   {name: "Mango Mocktail", image: "/menus/1.png", description: "Rp. 23,100"},
-  {name: "Da Daw Mocktail", image: "/menus/1.png", description: "Rp. 23,100"},
+  {name: "Da Daw Mocktail", image: "/menus/10.png", description: "Rp. 23,100"},
   {name: "Ice Lychee Coffee", image: "/menus/1.png", description: "Rp. 26,565"},
   {
    name: "Ice Strawberry Coffee",
@@ -89,7 +89,7 @@ const mocktail = {
    description: "Rp. 26,565",
   },
 
-  {name: "Green Canyon", image: "/menus/1.png", description: "Rp. 32,340"},
+  {name: "Green Canyon", image: "/menus/12.png", description: "Rp. 32,340"},
  ],
 };
 

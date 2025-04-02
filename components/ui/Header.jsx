@@ -135,34 +135,7 @@ const MobileNav = () => {
  );
 };
 
-const Flyout = ({isVisible, onMouseEnter, onMouseLeave}) => {
- if (!isVisible) return null;
-
- return (
-  <div
-   onMouseEnter={onMouseEnter}
-   onMouseLeave={onMouseLeave}
-   className="absolute z-10 w-[200px] h-[200px] lg:top-[40px] xl:top-[50px] lg:right-[30px] xl:right-[30px] 2xl:right-[1115px] flex flex-col p-4">
-   <div className="p-5 w-full flex gap-10 bg-tertiary border border-primary bg-white text-black rounded-lg shadow-md">
-    <div className="flex flex-col gap-5">
-     <div className="flex flex-col gap-3 text-primary">
-      {MoreLink.map((item, index) => (
-       <Link
-        href={item.path}
-        key={index}
-        className="hover:underline 2xl:text-lg">
-        {item.name}
-       </Link>
-      ))}
-     </div>
-    </div>
-   </div>
-  </div>
- );
-};
-
 const Header = () => {
- const [flyout, setFlyout] = useState(false);
  const [header, setHeader] = useState(false);
 
  const scrollHeader = () => {

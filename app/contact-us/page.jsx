@@ -13,11 +13,12 @@ const Contact = () => {
     }}>
     <div className="text-center bg-black/40 h-full w-full flex flex-col gap-4 items-center justify-center px-10 pt-5">
      <div className="max-w-[800px]">
-      <h2 className="text-5xl font-bold">Ada pertanyaan? Hubungi tim kami!</h2>
+      <h2 className="text-5xl font-bold">Ada pertanyaan?</h2>
+      <span className="text-5xl font-bold">Hubungi tim kami!</span>
      </div>
     </div>
    </section>
-   <div className="h-screen w-full flex flex-col lg:flex-row items-center justify-between bg-white pt-[130px] pb-[50px] px-10 lg:px-[100px]">
+   <div className="h-screen w-full flex flex-col lg:flex-row items-center justify-between bg-white pt-[50px] pb-[50px] px-10 lg:px-[100px]">
     <div className="flex flex-col gap-7  text-black font-bold max-w-[400px]">
      <h1 className="text-4xl lg:text-5xl">
       Mau mengobrol langsung dengan tim kami?

@@ -24,8 +24,8 @@ export default function RootLayout({children}) {
    setFadeOut(true);
    setTimeout(() => {
     setLoading(false);
-   }, 500); 
-  }, 1000); 
+   }, 100); 
+  }, 100); 
 
   return () => clearTimeout(timer);
  }, []);
