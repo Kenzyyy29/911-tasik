@@ -33,12 +33,12 @@ const Blog = () => {
      </div>
     </div>
    </section>
-   <section className="h-screen w-full px-[100px]">
+   <section className="h-screen w-full lg:px-[100px]">
     <div className=" p-4">
      <div className="flex justify-center">
       <h1 className="text-4xl font-bold mb-6">Berita Perusahaan</h1>
      </div>
-     <div className="grid grid-cols-2 gap-4">
+     <div className="flex justify-center lg:justify-start gap-4">
       {Article.map((item, index) => (
        <Link
         href={item.path}

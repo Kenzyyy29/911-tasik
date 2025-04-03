@@ -11,7 +11,7 @@ const Career = () => {
      backgroundSize: "cover",
      backgroundPosition: "center",
     }}>
-    <div className="bg-black/60 w-full h-full flex items-center justify-center">
+    <div className="bg-black/60 w-full h-full flex items-center justify-center px-10">
      <div className="flex flex-col gap-5 max-w-[600px] text-center">
       <h1 className="font-bold text-5xl">
        Bergabung bersama kami, dan dapatkan kesempatan karir yang menarik.
@@ -19,7 +19,7 @@ const Career = () => {
      </div>
     </div>
    </section>
-   <section className="lg:h-screen h-[1300px] bg-white text-black">
+   <section className="min-h-screen lg:h-screen  bg-white text-black">
     <SearchBox />
    </section>
   </div>

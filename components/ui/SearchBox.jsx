@@ -44,9 +44,9 @@ const SearchBox = () => {
  };
 
  return (
-  <section className="h-screen text-center px-10 py-10 w-full">
+  <section className="min-h-screen text-center px-5 lg:px-10 py-10 w-full">
    <h1 className="text-3xl lg:text-4xl font-bold">Search your interest here</h1>
-   <div className="p-4 flex flex-col gap-[80px] items-center justify-center w-full">
+   <div className="p-4 flex flex-col gap-[50px] items-center justify-center w-full">
     <input
      type="text"
      placeholder="Search..."
@@ -71,7 +71,7 @@ const SearchBox = () => {
          }}>
          <div className="bg-black/60 w-full h-full flex flex-col items-center justify-center">
           <h1 className="text-3xl font-bold text-white">{item.name}</h1>
-          <p className="text-white">{item.description}</p>
+          <p className="text-white hidden">{item.description}</p>
          </div>
         </div>
        </div>

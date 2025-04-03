@@ -10,26 +10,30 @@ const kelebihan = {
   {
    name: "Foods",
    icon: <PiForkKnifeFill />,
-   desctiption: "Kami menyajikan makanan terbaik kami dengan kualitas.",
+   desctiption: "Kami menyajikan makanan kami dengan kualitas terbaik.",
   },
   {
    name: "Beverages",
    icon: <SiCoffeescript />,
-   desctiption: "Minuman Kami Segar",
+   desctiption: "Kami menyajikan minuman kami dengan kualitas terbaik.",
   },
   {
    name: "Services",
    icon: <BsFillPersonCheckFill />,
-   desctiption: "Pelayanan Terbaik",
+   desctiption: "Kami memberikan pelayanan terbaik kepada pelanggan kami.",
   },
-  {name: "Spaces", icon: <TbBuildingStore />, desctiption: "Tempat Yang Luas"},
+  {
+   name: "Spaces",
+   icon: <TbBuildingStore />,
+   desctiption: "Ketersediaan tempat kami cukup kuas dan nyaman.",
+  },
  ],
 };
 
 const menu = [
- {name: "Menu 1", image: "/menus/1.png", description: "ABCD"},
- {name: "Menu 1", image: "/menus/4.png", description: "DBCA"},
- {name: "Menu 1", image: "/menus/6.png", description: "CCBA"},
+ {name: "Butter Coffee", image: "/menus/8.png", description: "Rp. 32,340"},
+ {name: "Tahu Lada Garam", image: "/menus/4.png", description: "Rp. 19,635"},
+ {name: "Korova Mushroom", image: "/menus/27.png", description: "Rp. 78,540"},
 ];
 
 export default function Home() {
@@ -114,10 +118,8 @@ export default function Home() {
       Kami selalu memberikan pelayanan terbaik untuk anda
      </h1>
      <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque placeat
-      voluptatibus id repudiandae fugit perspiciatis maiores eius doloribus
-      tempore consequuntur error eaque, explicabo quam quas harum? Fuga quam
-      molestias repellat?
+      Nikmati pengalaman berkuliner yang luar biasa bersama 911 Coffee
+      Tasikmalaya.
      </p>
     </div>
    </section>

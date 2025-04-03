@@ -22,19 +22,17 @@ const SocialLinks = [
 const Links = {
  name: "COMPANY PROFILE",
  items: [
-  {name: "About Us", path: "/"},
-  {name: "Product", path: "/"},
-  {name: "Blog", path: "/"},
-  {name: "Franchise", path: "/"},
+  {name: "Tentang Kami", path: "/about-us"},
+  {name: "Menu", path: "/product"},
+  {name: "Berita", path: "/blog"},
  ],
 };
 
 const Links2 = {
  name: "OTHERS",
  items: [
-  {name: "Contact Us", path: "/"},
-  {name: "FAQ", path: "/"},
-  {name: "Career", path: "/"},
+  {name: "Kontak", path: "/contact-us"},
+  {name: "Karir", path: "/career"},
  ],
 };
 
@@ -105,7 +103,7 @@ const Footer = () => {
     </div>
    </div>
    <hr className="w-full border border-white" />
-   <p className="text-gray-400">Copyright @2016 911 Coffee.</p>
+   <p className="text-gray-400">@ 2016 911 Coffee. All Rights Reserved</p>
   </div>
  );
 };

@@ -18,7 +18,7 @@ const Contact = () => {
      </div>
     </div>
    </section>
-   <div className="h-screen w-full flex flex-col lg:flex-row items-center justify-between bg-white pt-[50px] pb-[50px] px-10 lg:px-[100px]">
+   <div className="h-screen w-full flex flex-col lg:flex-row gap-5 items-center justify-between bg-white pt-[50px] pb-[50px] px-10 lg:px-[100px]">
     <div className="flex flex-col gap-7  text-black font-bold max-w-[400px]">
      <h1 className="text-4xl lg:text-5xl">
       Mau mengobrol langsung dengan tim kami?
@@ -28,11 +28,12 @@ const Contact = () => {
       jam.
      </p>
      <p className="text-base font-normal">
-      Kami senang membantu Anda di jam-jam layanan berikut ini: Senin - Minggu 9
-      Pagi - 9 Malam Telepon kami atau tinggalkan pertanyaan di formulir.
+      Kami senang membantu Anda di jam-jam layanan berikut ini: <br /> Senin - Minggu 9
+      Pagi - 9 silahkan tinggalkan pertanyaan di formulir yang tertera.
      </p>
      <p className="text-base font-normal">
-      Kami akan merespons Anda dalam 1 hari kerja. 1500970 support@mokapos.com
+      Kami akan merespons Anda dalam 1 hari kerja. <br /> +62 811-2230-911
+      911coffee.tasik@gmail.com
      </p>
     </div>
     <ContactForm />

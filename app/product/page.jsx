@@ -1,4 +1,5 @@
 import DesktopProduct from "@/components/DesktopProduct";
+import MobileProduct from "@/components/MobileProduct";
 
 const ProductPage = () => {
  return (
@@ -18,6 +19,7 @@ const ProductPage = () => {
     </div>
    </div>
    <DesktopProduct />
+   <MobileProduct />
   </div>
  );
 };

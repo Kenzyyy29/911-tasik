@@ -19,14 +19,14 @@ const maksi = {
  title: "Maksi",
  description: "(10 AM - 3 PM)",
  items: [
-  {name: "Ayam Goreng/Bakar", image: "/menus/1.png", description: "Rp. 25,000"},
-  {name: "911 Fried Rice", image: "/menus/1.png", description: "Rp. 25,000"},
+  {name: "Ayam Goreng/Bakar", image: "/menus/24.png", description: "Rp. 25,000"},
+  {name: "911 Fried Rice", image: "/menus/32.png", description: "Rp. 25,000"},
   {
    name: "Spaghetti Bolognese",
    image: "/menus/1.png",
    description: "Rp. 25,000",
   },
-  {name: "Ricebowl Variant", image: "/menus/1.png", description: "Rp. 25,000"},
+  {name: "Ricebowl Variant", image: "/menus/26.png", description: "Rp. 25,000"},
  ],
 };
 
@@ -148,7 +148,7 @@ const mojito = {
 const others = {
  title: "Others",
  items: [
-  {name: "Mineral Water", image: "/menus/1.png", description: "Rp. 9,240"},
+  {name: "Mineral Water", image: "/menus/34.png", description: "Rp. 9,240"},
   {name: "Coffee Beer", image: "/menus/1.png", description: "Rp. 28,875"},
  ],
 };
@@ -184,7 +184,7 @@ const pecel = {
    description: "Rp. 28,875",
   },
   {
-   name: "Saikoto Meat Pecel",
+   name: "Saikoro Meat Pecel",
    image: "/menus/15.png",
    description: "Rp. 34,650",
   },
@@ -269,12 +269,12 @@ const steak = {
  items: [
   {
    name: "Chicken Steak",
-   image: "/menus/1.png",
+   image: "/menus/28.png",
    description: "Rp. 51,975",
   },
   {
    name: "Sirloin Steak",
-   image: "/menus/28.png",
+   image: "/menus/33.png",
    description: "Rp. 78,540",
   },
   {

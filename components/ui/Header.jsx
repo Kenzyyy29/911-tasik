@@ -3,59 +3,33 @@ import Link from "next/link";
 import {useEffect, useState} from "react";
 
 // icons
-import {IoIosArrowDown, IoIosClose} from "react-icons/io";
+import {IoIosClose} from "react-icons/io";
 import {CiMenuFries} from "react-icons/ci";
 
 const MobileLinks = [
  {
-  name: "About Us",
+  name: "Tentang Kami",
   path: "/about-us",
  },
  {
-  name: "Product",
+  name: "Menu",
   path: "/product",
  },
  {
-  name: "Franchise",
-  path: "/",
+  name: "Berita",
+  path: "/blog",
  },
-];
-
-const MoreLink = [
  {
-  name: "Contact Us",
+  name: "Kontak",
   path: "/contact-us",
  },
  {
-  name: "FAQ",
-  path: "/",
+  name: "Karir",
+  path: "/career",
  },
- {name: "Career", path: "/career"},
 ];
 
-const Dropdown = ({isVisible, onClose}) => {
- if (!isVisible) return null;
- return (
-  <div className="flex flex-col gap-5 p-3 text-lg font-medium border-b border-t">
-   {MoreLink.map((item, index) => (
-    <Link
-     onClick={onClose}
-     href={item.path}
-     key={index}>
-     {item.name}
-    </Link>
-   ))}
-  </div>
- );
-};
-
 const Popup = ({isVisible, onCLose}) => {
- const [dropdown, setDropdown] = useState(false);
-
- const toggleDropdown = () => {
-  setDropdown(!dropdown);
- };
-
  if (!isVisible) return null;
 
  return (
@@ -87,18 +61,6 @@ const Popup = ({isVisible, onCLose}) => {
          {item.name}
         </Link>
        ))}
-       <button
-        onClick={toggleDropdown}
-        className="flex justify-between items-center">
-        More
-        <IoIosArrowDown />
-       </button>
-       {dropdown && (
-        <Dropdown
-         isVisible={dropdown}
-         onClick={onCLose}
-        />
-       )}
       </div>
      </div>
     </div>

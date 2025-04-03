@@ -1,4 +1,3 @@
-import BlogForm from "@/components/ui/BlogForm";
 import Link from "next/link";
 const Article1 = () => {
  return (
@@ -10,13 +9,13 @@ const Article1 = () => {
      backgroundPosition: "center",
      height: "55vh",
     }}>
-    <div className="w-full bg-black/60 h-full flex items-center justify-center">
+    <div className="w-full bg-black/60 h-full flex items-center justify-center px-5 lg:px-0">
      <h1 className="font-bold text-5xl text-white">
       Paket Buka Puasa di 911 Coffee Tasikmalaya
      </h1>
     </div>
    </section>
-   <div className="py-10 px-[100px] flex flex-col gap-3">
+   <div className="py-10 px-5 lg:px-[100px] flex flex-col gap-3">
     <h2 className="text-2xl font-semibold text-black">
      Paket Buka Puasa di 911 Coffee Tasikmalaya
     </h2>
