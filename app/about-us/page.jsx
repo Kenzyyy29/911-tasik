@@ -97,7 +97,7 @@ const About = () => {
      <img
       src="/4.jpeg"
       alt=""
-      className="h-full lg:h-auto"
+      className="h-full lg:h-auto object-cover"
      />
     </div>
     <div className="flex flex-col gap-5 max-w-[500px] px-4 lg:px-0">
